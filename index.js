@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
-const path = require("path");
 
 app.use("/api", require("./routes"));
 app.get("*", (req, res) => {
-	res.sendFile(path.resolve(__dirname, "views", "index.html"));
+	res.status(404).send({
+		message: "API Not Available",
+		code: 404,
+	});
 });
 
 const port = process.env.PORT || 5000;
