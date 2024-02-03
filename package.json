@@ -1,0 +1,14 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "appwrite db access tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sohail",
+  "license": "ISC",
+  "dependencies": {
+    "node-appwrite": "^11.1.0"
+  }
+}
